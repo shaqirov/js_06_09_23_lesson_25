@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIOS</title>
+</head>
+<body>
+
+    
+    <div>
+        <ol id="postsList"></ol>
+
+        <form id="form">
+            <textarea type="text" name="title" placeholder="Title"></textarea>
+            <textarea type="text" name="body" placeholder="Body"></textarea>
+            <button class="" type="submit">Создать</button>
+        </form>
+    </div>
+
+
+
+
+    <style>
+        ol {
+            width:  60%;
+        }
+        li {
+            width: 80%;
+            border: 1px solid orange;
+            padding: 15px;
+            font-size: 20px;
+        }
+        div {
+            display: flex;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        textarea {
+            width: 400px;
+            height: 80px;
+            padding: 20px;
+        }
+        button {
+            width: 150px;
+            height: 30px;
+        }
+    </style>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
